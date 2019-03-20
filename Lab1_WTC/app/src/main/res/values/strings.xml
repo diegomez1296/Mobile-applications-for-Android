@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Work Time Calculator</string>
+    <string name="app_intro">Enter your times</string>
+
+
+    <string name="app_startTime">Start Time:</string>
+    <string name="app_endTime">End Time:</string>
+    <string name="app_yourTime">Your Time:</string>
+
+    <string name="app_result">Result:</string>
+
+    <string name="app_numberOfH">Hours:</string>
+    <string name="app_numberOfM">Minutes:</string>
+
+    <string name="app_errorTime">Invalid time format. Try "HH:mm"</string>
+
+    <string name="app_author">by Lukasz Rydzinski</string>
+
+</resources>
