@@ -11,8 +11,9 @@
 
     <string name="app_numberOfH">Hours:</string>
     <string name="app_numberOfM">Minutes:</string>
+    <string name="numberInFract">In fractional:</string>
 
-    <string name="app_errorTime">Invalid time format. Try "HH:mm"</string>
+    <string name="app_errorTime">Invalid time format. Try \"HH:mm\"</string>
 
     <string name="app_author">by Lukasz Rydzinski</string>
 
