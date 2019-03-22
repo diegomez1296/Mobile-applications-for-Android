@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="app_bmi">Body Mass Index</string>
+
+    <string name="app_generalInfo">General</string>
+    <string name="app_detailsInfo">Details</string>
+    <string name="app_historyInfo">History</string>
+
+    <string name="app_GenDescription">The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in metres.
+        The BMI may also be determined using a table or chart which displays BMI as a function of mass and height using contour lines or colours for different BMI categories, and which may use other units of measurement (converted to metric units for the calculation).</string>
+
+    <string name="app_DetDescription">The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value. That categorization is the subject of some debate about where on the BMI scale the dividing
+        lines between categories should be placed. Commonly accepted BMI ranges are underweight: under 18.5 kg/m2, normal weight: 18.5 to 25, overweight: 25 to 30, obese: over 30.</string>
+
+    <string name="app_HistoryDescription">Adolphe Quetelet, a Belgian astronomer, mathematician, statistician and sociologist, devised the basis of the BMI between 1830 and 1850 as he developed what he called "social physics". The modern term "body mass index" (BMI) for the ratio of human body weight to squared height was coined in a paper
+        published in the July 1972 edition of the Journal of Chronic Diseases by Ancel Keys and others. In this paper, Keys argued that what he termed the BMI was "&#8230;if not fully satisfactory, at least as good as any other relative weight index as an indicator of relative obesity"</string>
+
+    <string name="app_male">Male</string>
+    <string name="app_female">Female</string>
+    <string name="app_mass">mass [kg]</string>
+    <string name="app_height">height [cm]</string>
+
+    <string name="app_BMIResult">BMI:</string>
+    <string name="app_BMI_UnderWeight_III">Very severely underweight</string>
+    <string name="app_BMI_UnderWeight_II">Severely underweight</string>
+    <string name="app_BMI_UnderWeight_I">Underweight</string>
+    <string name="app_BMI_NormalWeight">Normal (healthy weight)</string>
+    <string name="app_BMI_ObeseWeight_I">Overweight</string>
+    <string name="app_BMI_ObeseWeight_II">Obese Class I (Moderately obese)</string>
+    <string name="app_BMI_ObeseWeight_III">Obese Class II (Severely obese)</string>
+    <string name="app_BMI_ObeseWeight_IV">Obese Class III (Very severely obese)</string>
+
+    <string name="app_toastDesc">You can send your BMI result ;)</string>
+    <string name="app_author">by Lukasz Rydzinski</string>
+
+</resources>
