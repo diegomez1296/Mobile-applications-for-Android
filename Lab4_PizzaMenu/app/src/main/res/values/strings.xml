@@ -21,7 +21,7 @@
     <string name="AppCurrency">$</string>
     <!--Info-->
     <string name="info_Title">Online Menu</string>
-    <string name="info_Version">v1.0</string>
+    <string name="info_Version">v1.1</string>
     <string name="info_Author">Created by Lukasz Rydzinski</string>
     <string name="info_git"><a href="https://github.com/diegomez1296">github.com/diegomez1296</a></string>
 
