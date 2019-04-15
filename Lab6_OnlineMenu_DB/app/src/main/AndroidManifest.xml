@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.rydzinski.lab6_onlinemenu_db">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.SubmitActivity" android:label="@string/submitActivity_name" android:parentActivityName=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.InfoActivity" android:label="@string/infoActivity_name" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.CategoryActivity" android:label="@string/categoryActivity_name" android:parentActivityName=".Activities.MainActivity"/>/>
+        <activity android:name=".Activities.DetailsActivity" android:label="@string/detailsActivity_name" android:parentActivityName=".Activities.MainActivity"/>/>
+        <activity android:name=".Activities.MainActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

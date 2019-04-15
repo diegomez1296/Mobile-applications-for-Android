@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Online Menu with DB</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="MenuOptions">
+        <item>Pizzas</item>
+        <item>Drinks</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="action_get_info">Info</string>
+    <string name="action_info">Info</string>
+    <string name="action_submit">Submit</string>
+    <string name="submitActivity_name">Submit</string>
+    <string name="infoActivity_name">About...</string>
+    <string name="categoryActivity_name">Categories</string>
+    <string name="detailsActivity_name">Details</string>
+
+    <!--Submit-->
+    <string name="submit_text">Submit</string>
+    <string name="AppCurrency">$</string>
+    <!--Info-->
+    <string name="info_Title">Online Menu with DB</string>
+    <string name="info_Version">v1.0</string>
+    <string name="info_Author">Created by Lukasz Rydzinski</string>
+    <string name="info_git"><a href="https://github.com/diegomez1296">github.com/diegomez1296</a></string>
+
+
+
+</resources>
