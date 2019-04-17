@@ -16,15 +16,17 @@
     <string name="categoryActivity_name">Categories</string>
     <string name="detailsActivity_name">Details</string>
 
+
+    <string name="orders_text">Orders</string>
     <!--Submit-->
     <string name="submit_text">Submit</string>
     <string name="AppCurrency">$</string>
     <!--Info-->
-    <string name="info_Title">Online Menu with DB</string>
-    <string name="info_Version">v1.0</string>
+    <string name="info_Title">Online Menu</string>
+    <string name="info_Version">v1.1</string>
     <string name="info_Author">Created by Lukasz Rydzinski</string>
     <string name="info_git"><a href="https://github.com/diegomez1296">github.com/diegomez1296</a></string>
-
+    <string name="action_orders">Orders</string>
 
 
 </resources>

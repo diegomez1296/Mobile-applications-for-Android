@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class OnlineMenuDatabaseHelper extends SQLiteOpenHelper {
 
-    private static String DB_NAME = "OnlineMenuDB";
+    private static String DB_NAME = "OnlineMenuDB_1";
     private static int DB_VERSION = 1;
 
     public OnlineMenuDatabaseHelper(Context context) {
@@ -17,6 +17,15 @@ public class OnlineMenuDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        //Orders
+        db.execSQL(createTableOrder("AORDER"));
+
+        ContentValues newItem = new ContentValues();
+        newItem.put("NAME", "Test");
+        newItem.put("AMOUNT", "100");
+        db.insert("AORDER", null, newItem);
+
+
         //Create Table
         db.execSQL(createTable("PIZZA"));
         db.execSQL(createTable("DRINK"));
@@ -25,7 +34,7 @@ public class OnlineMenuDatabaseHelper extends SQLiteOpenHelper {
         //Insert Items
         db.insert("PIZZA", null,
                 createItem("Chicken Supreme", "With Tomato Sauce, Chicken Meat, Chicken Salami, Chicken Loaf, Mushrooms, Capsicums, Onions, Mozzarella Cheese.",
-                11.99f, R.drawable.chicken_supreme));
+                        11.99f, R.drawable.chicken_supreme));
         db.insert("PIZZA", null,
                 createItem("Hawaiian Supreme", "With Tomato Sauce, Chicken Meat, Chicken Loaf, Pineapples, Mozzarella Cheese.",
                         14.99f, R.drawable.hawaiian_supreme));
@@ -54,16 +63,22 @@ public class OnlineMenuDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
     }
 
     private String createTable(String nameTable) {
-         return "CREATE TABLE "+nameTable+" (" +
+        return "CREATE TABLE " + nameTable + " (" +
                 "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + "NAME TEXT, "
                 + "DESCRIPTION TEXT, "
                 + "PRICE REAL, "
                 + "IMAGE_RESOURCE_ID INTEGER);";
+    }
+
+    private String createTableOrder(String nameTable) {
+        return "CREATE TABLE " + nameTable + " (" +
+                "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                + "NAME TEXT, "
+                + "AMOUNT TEXT);";
     }
 
     private ContentValues createItem(String name, String description, float price, int imageResId) {

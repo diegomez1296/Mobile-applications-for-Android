@@ -20,10 +20,10 @@ public class DetailsActivity extends ToolbarCreator {
     private String getCategory;
     private int getId;
 
-    private ImageView ImageView_Photo;
-    private TextView TextView_Name;
-    private TextView TextView_Description;
-    private TextView TextView_Price;
+    private ImageView imageView_Photo;
+    private TextView textView_Name;
+    private TextView textView_Description;
+    private TextView textView_Price;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,21 +39,21 @@ public class DetailsActivity extends ToolbarCreator {
         getCategory = getIntent().getStringExtra("category");
         getId = getIntent().getIntExtra("id", 0);
 
-        ImageView_Photo = findViewById(R.id.photo);
-        TextView_Name = findViewById(R.id.name);
-        TextView_Description = findViewById(R.id.description);
-        TextView_Price = findViewById(R.id.price);
+        imageView_Photo = findViewById(R.id.photo);
+        textView_Name = findViewById(R.id.name);
+        textView_Description = findViewById(R.id.description);
+        textView_Price = findViewById(R.id.price);
 
         Food food = getFoodFromDB(getCategory, getId+1);
         setContentOfProduct(food);
     }
 
     private void setContentOfProduct(Food food) {
-        ImageView_Photo.setImageResource(food.getImageResourceId());
-        ImageView_Photo.setContentDescription(food.getName());
-        TextView_Name.setText(food.getName());
-        TextView_Description.setText(food.getDescription());
-        TextView_Price.setText(getString(R.string.AppCurrency) + food.getPrice());
+        imageView_Photo.setImageResource(food.getImageResourceId());
+        imageView_Photo.setContentDescription(food.getName());
+        textView_Name.setText(food.getName());
+        textView_Description.setText(food.getDescription());
+        textView_Price.setText(getString(R.string.AppCurrency) + food.getPrice());
 
         //Submit
         setFoodName(food.getName());
@@ -70,6 +70,7 @@ public class DetailsActivity extends ToolbarCreator {
                     null, null, null);
 
             cursor.moveToFirst();
+
             return new Food(cursor.getString(0), cursor.getString(1), cursor.getFloat(2), cursor.getInt(3));
 
         } catch (SQLiteException e) {
@@ -78,5 +79,6 @@ public class DetailsActivity extends ToolbarCreator {
         }
 
         return new Food("", "", 0.0f, 0);
+
     }
 }

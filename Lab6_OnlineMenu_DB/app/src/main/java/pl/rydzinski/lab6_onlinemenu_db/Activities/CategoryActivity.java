@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.util.TimingLogger;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -15,7 +16,6 @@ import android.widget.Toast;
 
 import pl.rydzinski.lab6_onlinemenu_db.DAO.Food;
 import pl.rydzinski.lab6_onlinemenu_db.OnlineMenuDatabaseHelper;
-
 
 public class CategoryActivity extends ListActivity {
 
@@ -78,7 +78,6 @@ public class CategoryActivity extends ListActivity {
                 foods[i] = new Food(cursor.getString(0));
                 cursor.moveToNext();
             }
-
             return foods;
 
         } catch (SQLiteException e) {

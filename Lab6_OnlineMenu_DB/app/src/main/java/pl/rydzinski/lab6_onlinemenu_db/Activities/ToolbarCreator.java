@@ -45,6 +45,12 @@ public abstract class ToolbarCreator extends Activity {
                 Intent intentOther2 = new Intent(thisActivity, InfoActivity.class);
                 startActivity(intentOther2);
                 return true;
+
+            case R.id.action_orders:
+                Intent intentOther3 = new Intent(thisActivity, OrderActivity.class);
+                startActivity(intentOther3);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
 
